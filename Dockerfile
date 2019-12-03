@@ -1,7 +1,7 @@
 FROM alpine AS fetch
 
 RUN apk add --update openssl
-RUN wget -q https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
+RUN wget -q https://dl.espressif.com/dl/xtensa-esp32-elf-gcc8_2_0-esp-2019r2-linux-amd64.tar.gz
 RUN tar xzf /xtensa-esp32-elf*.tar.gz
 
 FROM python
