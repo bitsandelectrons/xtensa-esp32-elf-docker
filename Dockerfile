@@ -6,7 +6,7 @@ RUN tar xzf /xtensa-esp32-elf*.tar.gz
 
 FROM python
 
-ENTRYPOINT /bin/bash
+CMD /bin/bash
 COPY --from=fetch /xtensa-esp32-elf /opt/xtensa-esp32-elf
 ENV PATH /opt/xtensa-esp32-elf/bin:$PATH
 
